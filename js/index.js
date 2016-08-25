@@ -3,6 +3,7 @@ $(document).ready(function() {
   var template = Handlebars.compile(source);
 
   var data = {years: [
+    
       {
         yearName: "1776",
         events: [
@@ -13,6 +14,7 @@ $(document).ready(function() {
           },
         ]
       },
+      
       {
         yearName: "1779",
         events: [
@@ -28,6 +30,7 @@ $(document).ready(function() {
           },
         ]
       },
+      
   ]};
 
   $("#mainContainer").html(template(data));
