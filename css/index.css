@@ -1,0 +1,9 @@
+html {
+  padding-top:10px;
+}
+.alert, .well {
+  border-radius:0px;
+}
+.alert {
+  padding-top:0px;
+}

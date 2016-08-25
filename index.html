@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>APGOV Timeline</title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/index.css" rel="stylesheet">
+  </head>
+  <body>
+
+    <div class="container" id="mainContainer">
+
+    </div>
+
+    <script src="js/jquery-3.1.0.min.js"></script>
+    <script src="js/handlebars-v4.0.5.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+
+  <template id="yearsTemplate" type="text/x-handlebars-template">
+    {{#each years}}
+        <div class="well">
+            <h1>{{yearName}}</h1>
+            {{#each events}}
+              <div class="alert alert-{{class}}"role="alert">
+                <h3>{{eventName}}</h3>
+                <p>{{eventDesc}}</p>
+              </div>
+            {{/each}}
+        </div>
+    {{/each}}
+  </template>
+</html>
